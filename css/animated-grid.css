@@ -1,0 +1,129 @@
+body{
+    background-position-x: auto;
+}
+
+.animated-grid {
+    height: 65vh;
+    margin-bottom: 200px;
+
+
+  
+    display: grid;
+    gap: 1rem;
+  
+    grid-template-areas:
+      'a  b  c  d'
+      'l  🌟 🌟 e'
+      'k  🌟 🌟 f'
+      'j  i  h  g';
+  
+    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: auto auto auto auto;
+    --stagger-delay: 80ms;
+  }
+  
+  @keyframes cardEntrance {
+    from {
+      opacity: 0;
+      transform: scale(0.3);
+      filter: hue-rotate(180deg);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+      filter: hue-rotate(0deg);
+    }
+  }
+  
+  .card1{
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;    
+    grid-area: a;
+    animation-delay: calc(1 * var(--stagger-delay));
+  } 
+   .card2 {
+    animation: cardEntrance 800ms ease-out;
+    animation-fill-mode: backwards;    
+    grid-area: b;
+    animation-delay: calc(1 * var(--stagger-delay));
+  }
+    .card3 {
+    animation: cardEntrance 900ms ease-out;
+    animation-fill-mode: backwards;    
+    grid-area: c;
+    animation-delay: calc(1 * var(--stagger-delay));
+  }
+    .card4 {
+    animation: cardEntrance 1000ms ease-out;
+    animation-fill-mode: backwards;    
+    grid-area: d;
+    animation-delay: calc(1 * var(--stagger-delay));
+  }
+    .card5 {
+    animation: cardEntrance 1100ms ease-out;
+    animation-fill-mode: backwards;  
+    grid-area: e;
+    animation-delay: calc(1 * var(--stagger-delay));  
+  }
+    .card6 {
+    animation: cardEntrance 1200ms ease-out;
+    animation-fill-mode: backwards;    
+    grid-area: f;
+    animation-delay: calc(1 * var(--stagger-delay));
+  }
+    .card7 {
+    animation: cardEntrance 1300ms ease-out;
+    animation-fill-mode: backwards;    
+    grid-area: g;
+    animation-delay: calc(1 * var(--stagger-delay));
+  }
+    .card8 {
+    animation: cardEntrance 1400ms ease-out;
+    animation-fill-mode: backwards;    
+    grid-area: h;
+    animation-delay: calc(1 * var(--stagger-delay));
+  }
+    .card9 {
+    animation: cardEntrance 1500ms ease-out;
+    animation-fill-mode: backwards; 
+    grid-area: i;
+    animation-delay: calc(1 * var(--stagger-delay));   
+  }
+    .card10 {
+    animation: cardEntrance 1600ms ease-out;
+    animation-fill-mode: backwards;    
+    grid-area: j;
+    animation-delay: calc(1 * var(--stagger-delay));
+  }
+    .card11 {
+    animation: cardEntrance 1700ms ease-out;
+    animation-fill-mode: backwards;    
+    grid-area: k;
+    animation-delay: calc(1 * var(--stagger-delay));
+  }
+    .card12 {
+    animation: cardEntrance 1800ms ease-out;
+    animation-fill-mode: backwards;  
+    grid-area: l;
+    animation-delay: calc(1 * var(--stagger-delay));  
+  }
+    .card13 {
+    animation: cardEntrance 1900ms ease-out;
+    animation-fill-mode: backwards;   
+    grid-area: 🌟;
+    animation-delay: calc(1 * var(--stagger-delay));  
+  }
+ 
+  h1{
+    text-align: center;
+    animation-delay: calc(1 * var(--stagger-delay));
+    text-shadow: 2px 8px 1px rgb(189, 189, 189);
+    font-size: 80px;
+    color: rgb(32, 32, 32);
+
+  }
+
+  p , a{
+    text-align: right;
+    font-size: 30px;
+  }

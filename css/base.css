@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+
+ .card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img, .card7 img, .card8 img, .card9 img, .card10 img, .card11 img, .card12 img, .card13 img {
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    justify-content: center;
+    border-radius: 10px;
+ 
+   
+
+
+    
+ } 
+
+
+ .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover, .card7:hover, .card8:hover, .card9:hover, .card10:hover, .card11:hover, .card12:hover, .card13:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+    transition: .5s linear;
+    box-shadow: 20px rgb(68, 68, 68);
+    
+ }
+ 
+
+ 
+ h1{
+    text-align: center;
+    text-shadow: 2px 8px 1px rgb(189, 189, 189);
+    font-size: 80px;
+    color: rgb(32, 32, 32);
+
+  }
+
+  p , a{
+    align-items: center;
+    text-align: right;
+    font-size: 30px;
+  }
+
